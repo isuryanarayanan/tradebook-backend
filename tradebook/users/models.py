@@ -80,3 +80,4 @@ class AdministratorProfile(models.Model):
 
     first_name = models.CharField(max_length=250, default='')
     last_name = models.CharField(max_length=250, default='')
+

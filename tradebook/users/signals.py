@@ -9,6 +9,6 @@ from users.models import AdministratorProfile
 def create_profile(sender, instance=None, created=False, **kwargs):
     if created:
         if instance.mode == 1:
-            customer =InvestorProfile.objects.create(user=instance)
+            InvestorProfile.objects.create(user=instance)
         if instance.mode == 2:
-            vendor =AdministratorProfile.objects.create(user=instance)
+            AdministratorProfile.objects.create(user=instance)
